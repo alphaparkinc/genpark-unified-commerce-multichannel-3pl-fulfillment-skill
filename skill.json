@@ -1,0 +1,41 @@
+{
+  "name": "genpark-unified-commerce-multichannel-3pl-fulfillment-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Unified multi-channel commerce orchestrator managing distributed 3PL warehouse fulfillment and cross-channel inventory sync.",
+  "author": "genpark",
+  "category": "logistics",
+  "tags": [
+    "unified-commerce",
+    "3pl-fulfillment",
+    "multichannel-inventory",
+    "shipping-optimization",
+    "cartcom"
+  ],
+  "inputs": {
+    "order_source": {
+      "type": "string"
+    },
+    "items_sku_list": {
+      "type": "array"
+    },
+    "destination_zip": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "fulfillment_order_id": {
+      "type": "string"
+    },
+    "assigned_3pl_warehouse": {
+      "type": "string"
+    },
+    "shipping_rate_optimized_usd": {
+      "type": "number"
+    },
+    "inventory_synchronized_across_channels": {
+      "type": "array"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
